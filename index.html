@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>AVOG_MAX</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+}
+
+/* NAVBAR */
+.navbar{
+    height:60px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 30px;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.nav-left{
+    display:flex;
+    gap:25px;
+    align-items:center;
+    font-weight:600;
+}
+
+.search{
+    background:#f1f1f1;
+    border:none;
+    padding:8px 15px;
+    border-radius:20px;
+    width:250px;
+}
+
+.nav-right{
+    display:flex;
+    gap:10px;
+}
+
+.record{
+    background:#3b5cff;
+    color:white;
+    padding:8px 16px;
+    border-radius:8px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.login{
+    background:#e5e5e5;
+    padding:8px 16px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* BANNER */
+.banner{
+    height:320px;
+    background:linear-gradient(#e5e5e5,#ffffff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* AVATAR GRANDE (WEBP) */
+.avatar3d{
+    width:200px;
+    height:200px;
+    background-image:url("avatar3d.webp");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.avatar3d:hover{
+    transform:translateY(-5px);
+}
+
+/* PROFILE */
+.profile{
+    background:white;
+    padding:60px 10%;
+    position:relative;
+}
+
+/* AVATAR CIRCULAR (WEBP) */
+.avatar-small{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background-image:url("avatar.webp");
+    background-size:cover;
+    background-position:center;
+    position:absolute;
+    top:-60px;
+    left:10%;
+    border:6px solid white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.profile-info{
+    margin-left:150px;
+}
+
+.username{
+    font-size:30px;
+    font-weight:700;
+}
+
+.handle{
+    color:#666;
+    margin-top:5px;
+}
+
+/* STATS */
+.stats{
+    display:flex;
+    gap:15px;
+    margin-top:15px;
+}
+
+.stat{
+    background:#efefef;
+    padding:8px 18px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+/* BUTTON */
+.action-btn{
+    position:absolute;
+    right:10%;
+    top:60px;
+    background:#3b5cff;
+    color:white;
+    padding:12px 40px;
+    border-radius:10px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* TABS */
+.tabs{
+    display:flex;
+    gap:40px;
+    margin-top:30px;
+    border-bottom:1px solid #ddd;
+}
+
+.tab{
+    padding-bottom:15px;
+    font-weight:600;
+    color:#777;
+}
+
+.tab.active{
+    color:black;
+    border-bottom:3px solid black;
+}
+
+/* SECTION */
+.section{
+    padding:40px 10%;
+}
+
+.items{
+    display:flex;
+    gap:20px;
+}
+
+.item{
+    width:180px;
+    height:180px;
+    background:#ddd;
+    border-radius:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="nav-left">
+        <div>Roblox</div>
+        <div>Highlights</div>
+        <div>Market</div>
+        <div>Create</div>
+        <div>Robux</div>
+        <input class="search" placeholder="Look for">
+    </div>
+
+    <div class="nav-right">
+        <div class="record">Record</div>
+        <div class="login">Login</div>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="avatar3d"></div>
+</div>
+
+<div class="profile">
+    <div class="avatar-small"></div>
+
+    <div class="profile-info">
+        <div class="username">AVOG_MAX</div>
+        <div class="handle">@maxlee2024</div>
+
+        <div class="stats">
+            <div class="stat">118 Connections</div>
+            <div class="stat">0 Followers</div>
+            <div class="stat">3 Following</div>
+        </div>
+    </div>
+
+    <div class="action-btn">Add connection</div>
+
+    <div class="tabs">
+        <div class="tab active">About me</div>
+        <div class="tab">Creations</div>
+    </div>
+</div>
+
+<div class="section">
+    <h3>Current clothing</h3>
+    <div class="items">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</div>
+
+</body>
+</html>
